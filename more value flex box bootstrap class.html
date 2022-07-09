@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet" href="css/bootstrap.css">
+     
+</head>
+
+<body class="p-5">
+
+     <div class="d-flex bg-secondary text-white">
+          <div class="p-2 bg-primary flex-grow-1">
+               Item 1
+          </div>
+          <!-- default px size of the item --> 
+
+          <div class="p-2 bg-dark">
+               Item 2
+          </div>
+
+          <div class="p-2 bg-primary">
+               Item 3
+          </div>
+     </div>
+
+     <br>
+     <br>
+     <div class="d-flex bg-secondary text-white">
+         
+     
+          <div class="p-2 bg-dark w-100">
+               Item 2 đâsdsadsadasdasdasdasdasdasdadasdasdasd
+               Item 2 đâsdsadsadasdasdasdasdasdasdadasdasdasd
+               Item 2 đâsdsadsadasdasdasdasdasdasdadasdasdasd
+
+          </div>
+          <!-- w-100 là 100% chiều rộng -->
+     
+          <div class="p-2 bg-primary w-100">
+          Item 2 đâsdsadsadasdasdasdasdasdasdadasdasdasd
+          Item 2 đâsdsadsadasdasdasdasdasdasdadasdasdasd
+          Item 2 đâsdsadsadasdasdasdasdasdasdadasdasdasd
+          </div>
+
+          <div class="p-2 bg-primary flex-shrink-1">
+               Item 1
+          </div>
+          <!-- bạn có thể thấy item1 co lại so với để item2, item3 có thể to hết mức chúng có thể  -->
+     </div>
+
+     <br>
+     <br>
+     <div class="d-flex bg-secondary text-white">
+          <div class="p-2 bg-primary flex-fill">
+               Item 1
+               Item 2 đâsdsadsadasdasdasdasdasdasdadasdasdasd
+               Item 2 đâsdsadsadasdasdasdasdasdasdadasdasdasd
+               Item 2 đâsdsadsadasdasdasdasdasdasdadasdasdasd
+               
+
+
+          </div>
+     
+          <div class="p-2 bg-dark flex-fill">
+               Item 2 đâsdsadsadasdasdasdasdasdasdadasdasdasd
+               Item 2 đâsdsadsadasdasdasdasdasdasdadasdasdasd
+               Item 2 đâsdsadsadasdasdasdasdasdasdadasdasdasd
+          </div>
+         
+     
+          <div class="p-2 bg-primary ">
+               Item 3 fsdfdf
+          </div>
+          
+     </div>
+     <!-- flex fill thì tương tự như flex-grow , fill the rest of content rather than compare to the other ones
+     fill the available space và nếu không gian còn thừa nhiều thì chia không gian cho mỗi element bằng nhau 
+nói chung là giống flex-grow. xem trong docs của bootstrap để hiểu hơn -->
+<br>
+<br>
+
+<div class="d-flex bg-secondary text-white">
+     <div class="p-2 bg-primary flex-grow-1">
+          Item 1Item 2 đâsdsadsadasdasdasdasdasdasdadasdasdasd
+          Item 2 đâsdsadsadasdasdasdasdasdasdadasdasdasd
+          Item 2 đâsdsadsadasdasdasdasdasdasdadasdasdasd
+
+     </div>
+
+     <div class="p-2 bg-dark flex-grow-1">
+          Item 2 đâsdsadsadasdasdasdasdasdasdadasdasdasd
+          Item 2 đâsdsadsadasdasdasdasdasdasdadasdasdasd
+          Item 2 đâsdsadsadasdasdasdasdasdasdadasdasdasd
+     </div>
+
+
+     <div class="p-2 bg-primary ">
+          Item 3 fsdfdf
+     </div>
+
+</div>
+<!-- tóm lại nếu nếu div đó có nội dung lớn thì khi co lại nội dung vẫn không thay đổi theo  -->
+</body>

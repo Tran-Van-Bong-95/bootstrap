@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet" href="css/bootstrap.css">
+     <style>
+          .block{
+               background-color: darkorange;
+               outline-style: solid;
+               outline-color: black;
+               outline-width: thick;
+          }
+
+
+     </style>
+</head>
+<body class="p-5">
+     <!-- class="p-5"  apply padding to top and bottom , left and right this is 5 times px. Nó không thực sự là 5px remember -->
+     <div class="container">
+          <div class="row">
+               <!-- mỗi row sẽ chứa 12 column -->
+               <div class="col-md-2 block"> Col-md-2</div>
+               <!-- nếu ta viết div class="col-md-4"
+                                   điều đó có nghĩa là div này được phân chia thành 4 column  -->
+
+               <div class="col-md-7 block"> Col-md-7 </div>
+               <div class="col-md-3 block"> Col-md-3 </div>                            
+               
+          </div>
+
+          <br>
+          <br>
+
+          <div class="row">
+               <!-- mỗi row sẽ chứa 12 column -->
+               <div class="col-md-4 block"> Col-md-4</div>
+               <!-- nếu ta viết div class="col-md-4"
+                                             điều đó có nghĩa là div này được phân chia thành 4 column  -->
+          
+               <div class="col-md-4 block"> Col-md-4 </div>
+               <div class="col-md-4 block"> Col-md-4 </div>
+          
+          </div>
+          <!-- 
+The classes are named using the format {property}{sides}-{size} for xs 
+and {property}{sides}-{breakpoint}-{size} for sm, md, lg, and xl.
+
+Where property is one of:
+
+m - for classes that set margin
+p - for classes that set padding
+
+Where sides is one of:
+
+t - for classes that set margin-top or padding-top
+b - for classes that set margin-bottom or padding-bottom
+l - for classes that set margin-left or padding-left
+r - for classes that set margin-right or padding-right
+x - for classes that set both *-left and *-right
+y - for classes that set both *-top and *-bottom
+blank - for classes that set a margin or padding on all 4 sides of the element
+
+Where size is one of:
+
+0 - for classes that eliminate the margin or padding by setting it to 0
+1 - (by default) for classes that set the margin or padding to $spacer * .25
+2 - (by default) for classes that set the margin or padding to $spacer * .5
+3 - (by default) for classes that set the margin or padding to $spacer
+4 - (by default) for classes that set the margin or padding to $spacer * 1.5
+5 - (by default) for classes that set the margin or padding to $spacer * 3
+auto - for classes that set the margin to auto
+
+$spacer defaults to 1rem -->
+     </div>
+     <!-- thực hành nhiều hơn nữa chẳng hạn tạo row inside of column hay inside of row
+       -->
+
+       
+
+
+</body>

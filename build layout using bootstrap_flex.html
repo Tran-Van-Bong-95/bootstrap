@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet" href="css/bootstrap.css">
+
+</head>
+
+
+<body class="p-5">
+<div class="d-flex flex-row justify-content-end">
+     <div class="bg-primary p-2 text-white">
+          Item 1
+     </div>
+
+     <div class="bg-dark p-2 text-white">
+          Item 2
+     </div>
+
+     <div class="bg-primary p-2 text-white">
+          Item 3
+     </div>
+     <!-- make display  a value of flex 
+
+          flex-row  means div into a row of items, everything inside of a div will be treated as column  within a row. 
+     Vì vậy mà ta thấy các div hành xử như colum trong 1 row (row ở đây là div lớn ngoài cùng )
+
+tiếp theo ta xét tiếp 1 class justify-content-start đây là default.Nothing changed. Tức là nếu bạn mở rộng hết màn hình nó sẽ hiển thị bên trái của div 
+
+justify-content-end nó sẽ hiển thị end of the div
+vì đây ở trên 1 row nên nó stuck ở phía bên phải 
+theo chiểu x access-->
+
+</div>
+<br>
+<br>
+<div class="d-flex flex-column justify-content-end" style="height: 100px" >
+     <div class="bg-primary p-2 text-white">
+          Item 1
+     </div>
+
+     <div class="bg-dark p-2 text-white">
+          Item 2
+     </div>
+
+     <div class="bg-primary p-2 text-white">
+          Item 3
+     </div>
+     <!-- make display  a value of flex 
+
+          flex-row  means div into a row of items, everything inside of a div will be treated as row  within a row. 
+     Vì vậy mà ta thấy các div hành xử như row trong 1 row (row ở đây là div lớn ngoài cùng ) 
+nếu column và justify-content-end nó sẽ struck to the bottom  theo chiều y access  
+nhưng nếu column và justify-content-start nó sẽ stuck xuống dưới hơn  
+-->
+
+<!-- để hiểu rõ hơn ta có sơ đồ sau:
+justify-content sẽ làm cho các elements trong div dịch chuyển theo hướng ngang 
+row    start----center----end--    
+
+dịch chuyển các items theo chiều dọc
+column thì ta hiểu là chiều dọc thẳng đứng =. lúc này justify-contetn (tức là căn chỉnh theo chiều ngang nội dụng) sẽ xem height là chiều ngang 
+end
+|
+|
+center
+|
+|
+start
+-->
+</div>
+
+<br>
+<br>
+<!-- dựa vào cách làm như trên ta có -->
+<div class="d-flex flex-row justify-content-center" >
+     <div class="bg-primary p-2 text-white">
+          Item 1
+     </div>
+
+     <div class="bg-dark p-2 text-white">
+          Item 2
+     </div>
+
+     <div class="bg-primary p-2 text-white">
+          Item 3
+     </div>
+</div>
+
+<br>
+<br>
+
+<div class="d-flex flex-row justify-content-around">
+     <div class="bg-primary p-2 text-white">
+          Item 1
+     </div>
+
+     <div class="bg-dark p-2 text-white">
+          Item 2
+     </div>
+
+     <div class="bg-primary p-2 text-white">
+          Item 3
+     </div>
+</div>
+<!-- tương tự ta thử với justify-content-between -->
+
+<br>
+<br>
+<!-- tiếp theo ta sẽ thảo luận về align-items -->
+<div class="d-flex flex-row align-items-end bg-secondary" style="height: 100px;">
+     <div class="bg-primary p-2 text-white">
+          Item 1
+     </div>
+
+     <div class="bg-dark p-2 text-white">
+          Item 2
+     </div>
+
+     <div class="bg-primary p-2 text-white">
+          Item 3
+     </div>
+     <!-- ta thấy 3 items này vẫn nằm cạnh nhau trên 1 row có điểu giờ ta áp dụng align-items nghĩa là lúc này các elements trong div chứa class row sẽ bị dịch chuyển lên trên hoặc xuống dưới hoặc ở giữa 
+     
+     dịch chuyển các items theo chiều dọc
+row thì ta hiểu là chiều ngang  => lúc này align-items (tức là căn chỉnh theo chiều dọc nội dụng văn bản) sẽ xem height là chiều dọc -->
+</div>
+
+</div>
+
+<br>
+<br>
+
+<div class="d-flex flex-column align-items-end bg-secondary" style="height: 100px;">
+<div class="bg-primary p-2 text-white">
+     Item 1
+</div>
+
+<div class="bg-dark p-2 text-white">
+     Item 2
+</div>
+
+<div class="bg-primary p-2 text-white">
+     Item 3
+</div>
+<!-- align-items dịch chuyển các items theo chiều dọc của nội dung văn bản => 
+column thì tức là chiều dọc là width và chiều ngang là hieght 
+(tức là lúc bày căn chỉnh theo chiều ngang của div -->
+</div>
+
+</div>
+
+<!-- từ 2 cái trên => column sẽ làm đảo ngược lại các thứ. Hiểu rõ bản chất sẽ không nhầm lẫn -->
+
+<!-- end, start, center, around, between, strech, baseline tìm hiểu các tính chất này-->
+
+
+</body> 
+</html>
